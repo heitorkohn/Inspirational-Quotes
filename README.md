@@ -1,7 +1,7 @@
 # 𝙸𝚗𝚜𝚙𝚒𝚛𝚊𝚝𝚒𝚘𝚗𝚊𝚕 𝚀𝚞𝚘𝚝𝚎𝚜 
 
 <p align="center"> 
-  <img src= "images/preview1.png" width="700"> 
+  <img src= "./Images/preview1.png" width="700"> 
 </p> 
 
 **"Made by a hardworking student, for a hardworking student."** 
@@ -24,8 +24,8 @@
 In addition to the central image, here are extra previews on the website's appearance: 
 
 <p align="center"> 
-  <img src="images/preview2.png" width="400"> 
-  <img src="images/preview3.png" width="400"> 
+  <img src="./Images/preview2.png" width="400"> 
+  <img src="./Images/preview3.png" width="400"> 
 </p> 
 
 ## About 
