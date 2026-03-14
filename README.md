@@ -109,7 +109,7 @@ The website is based on three languages:
 
 ## 🌐 Live Demo 
 
-[**🚀 Try the website here ⭑.ᐟ**](https://heitorkohn.github.io/inspirational-quotes) 
+[**🚀 Try the website here ⭑.ᐟ**](https://heitorkohn.github.io/Inspirational-Quotes/) 
 
 ## 🤔 How Did This Project Happen? 
 
