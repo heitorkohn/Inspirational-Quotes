@@ -1,0 +1,74 @@
+/* Importations */
+
+@import url('../CSS/style.css');
+
+/* Hero Content */
+
+#index-hero-1 {
+    height: 37.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+#index-hero-1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../Images/Index-background-above.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1) brightness(0.8);
+    z-index: 0;
+}
+
+#index-hero-2 {
+    height: 42.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+#index-hero-2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../Images/Index-background-below.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1) brightness(0.8);
+    z-index: 0;
+}
+
+.title {
+    text-align: center;
+    background-color: hsla(22.92, 100%, 65.1%, 0.9);
+    padding: 1.5rem 2.5rem;
+    border-radius: 0.5rem;
+    width: 40%;
+    height: 40%;
+    margin-left: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+h4 {
+    margin: 0 2rem 0 3rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.description {
+    margin: 2rem 3rem 1.5rem;
+    text-align: center;
+    z-index: 2;
+}
+

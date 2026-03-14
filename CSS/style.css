@@ -1,0 +1,355 @@
+/* Importations */
+
+@font-face{
+    font-family: "Ahsing";
+    src: url('../Fonts/ahsing-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "bryndan write";
+    src: url(../Fonts/bryndan-write-regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url(../Fonts/CormorantGaramond-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Glacial Indifference";
+    src: url(../Fonts/GlacialIndifference-Regular.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* universal rulesets */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(22.92, 100%, 65.1%, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.nav-logo h5 {
+    font-family: "Ahsing", cursive;
+    font-size: 2.5rem;
+    color:hsl(38, 100%, 99.5%);
+    margin-left: 1.75rem;
+}
+
+.nav-links {
+    display: inline-flex;
+    margin-right: 1.75rem;
+    z-index: 1000;
+    list-style: none;
+}
+
+.nav-links a{
+    font-family: "Glacial Indifference", sans-serif;
+    font-size: 1.35rem;
+    color: hsl(38, 100%, 99.5%);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 0.25rem 0.375rem;
+    border-radius: 0.25rem;
+    transition: color 0.3s ease;  
+}
+
+.nav-links a:hover {
+    color : hsla(332, 100%, 62%, 0.95);
+    border-bottom: 2px solid hsla(332, 100%, 62%, 0.95);
+    background-color: hsla(332, 100%, 62%, 0.15);
+}
+
+.nav-links li::after {
+    content: " | ";
+    color: hsl(38, 100%, 99.5%);
+    padding: 0 0.5rem;
+}
+
+.nav-links li:last-child::after {
+    content: "";
+}
+
+/* Main Content (basic definitions) */
+
+body {
+    margin-top: 6rem;
+}
+
+h1 {
+    font-family:"bryndan write", cursive;
+    font-size: 5.675rem;
+    color: hsl(38, 100%, 99.5%);
+    text-shadow: 2px 2px 3px hsla(37, 59.1%, 5.7%, 0.67);
+}
+
+h4 {
+    font-family: "bryndan write", cursive;
+    font-size: 2.75rem;
+    color: hsl(38, 100%, 99.5%);
+}
+
+.description p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    color: hsl(38, 100%, 99.5%);
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 1.5rem auto 0;
+    justify-content: center;
+}
+
+#big-links {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: repeat(4, 6rem);
+    grid-template-areas:
+        "MultiCramming"
+        "SadAwkward"
+        "HealthFirst"
+        "StrategicMode"; 
+    row-gap: 0.5rem;
+    justify-content: center;
+}
+
+#big-links li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#big-links a {
+    font-family: "Ahsing", cursive;
+    font-size: 1.875rem;
+    color: hsl(60, 14%, 1%);
+    transition: color 0.3s ease;
+    text-decoration: none;
+    padding: 0.75rem 0;
+    background-color: hsla(38, 100%, 99.5%, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+    width: 82.5%;
+    height: 6rem;
+    text-align: center;
+}
+
+#big-links a:hover {
+    background-color: hsla(332, 100%, 62%, 0.95);
+    cursor: pointer;
+    color: hsl(38, 100%, 99.5%);
+}
+
+h2 { /* Message generator titles */
+    font-family: "bryndan write", cursive;
+    font-size: 6rem;
+    margin: 1rem auto;
+    color: hsl(38, 100%, 99.5%);
+    justify-content: center;
+    text-align: center;
+    text-shadow: 1px 1px 2px hsla(37, 59.1%, 5.7%, 0.67);
+}
+
+.message-button {
+    display: block;
+    width: 42.5%;
+    height: 5.5rem;
+    margin: 2rem auto 1.5rem;
+    padding: 1.2rem 2.2rem;
+    font-family: "bryndan write", cursive;
+    font-size: 2.25rem;
+    color: hsl(38, 100%, 99.5%);
+    background-color: hsla(22.92, 100%, 65.1%, 0.9);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.message-button:hover {
+    background-color: hsla(332, 100%, 62%, 0.95);
+    cursor: pointer;
+}
+
+.message-button:active {
+    background-color: hsla(328, 70%, 38%, 0.95);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.box {
+    width: 75%;
+    height: 16rem;
+    margin: 0 auto;
+    background-color: hsla(22.92, 100%, 65.1%, 0.67);
+    border: 2px solid hsla(22, 100%, 4%, 0.9);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+    color: hsl(38, 100%, 99.5%);
+    text-align: center;
+}
+
+.quote {
+    opacity: 1;
+    transition: opacity 0.35s ease;
+}
+
+.quote.fade-out {
+    opacity: 0;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(22.92, 100%, 65.1%, 0.9);
+}
+
+footer p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    color: hsl(38, 100%, 99.5%);
+}
+
+/* Responsivity (growing from my laptop size) */
+
+@media (max-width: 2200px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 2600px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 3000px) {
+    html {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 3400px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 3800px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 4200px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 4600px) {
+    html {
+        font-size: 27.5px;
+    }
+}
+
+@media (max-width: 5000px) {
+    html {
+        font-size: 32.5px;
+    }
+}
+
+@media (max-width: 5400px) {
+    html {
+        font-size: 37.5px;
+    }
+}
+
+@media (min-width: 5400px) {
+    html {
+        font-size: 45px;
+    }
+}
+
+/* Reponsivity (diminishing size) */
+@media (max-width: 2000px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1500px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1250px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    html {
+        font-size: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    html {
+        font-size: 9px;
+        flex-wrap: wrap;
+    }
+}

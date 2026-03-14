@@ -1,0 +1,31 @@
+/* Importations */
+
+@import url('./style.css');
+
+/* Hero Content */
+
+#multi-hero {
+    height: 40rem;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    padding-top: 1rem;
+    z-index: 0;
+}
+
+#multi-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../Images/Multi-Cramming-background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1) brightness(0.8);
+    z-index: -1;
+}
+
+.description {
+    margin: 0 5rem;
+    font-size: 2rem;
+    line-height: 2rem;
+}
